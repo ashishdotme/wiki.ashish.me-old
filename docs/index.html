@@ -9896,7 +9896,7 @@ Error message and password prompt
 <div created="20201212082305167" creator="Ashish" modified="20201214182605543" modifier="Ashish" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>My thoughts</pre>
 </div>
-<div created="20201228000123960" creator="Ashish" modified="20201228000123960" modifier="Ashish" title="$:/state/showeditpreview" revision="1" bag="default">
+<div created="20201229013428619" creator="Ashish" modified="20201229013428619" modifier="Ashish" title="$:/state/showeditpreview" revision="1" bag="default">
 <pre>yes</pre>
 </div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
@@ -9911,7 +9911,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre>Ashish</pre>
 </div>
-<div list="[[28th December 2020]] [[24th December 2020]] Traffic [[15th December 2020]] Alfred [[13th December 2020]] [[Discord bot]] [[12th December 2020]]" title="$:/StoryList" revision="3" bag="default">
+<div list="[[28th December 2020]] [[24th December 2020]] Traffic [[15th December 2020]] Alfred [[13th December 2020]] [[Discord bot]] [[12th December 2020]]" title="$:/StoryList" revision="5" bag="default">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
@@ -10154,9 +10154,27 @@ The keys will be stored in the keychain and persist across reboots. They will be
 * Get daily articles from reddit
 </pre>
 </div>
-<div created="20201228000109489" creator="Ashish" modified="20201228000156721" modifier="Ashish" tags="Journal Wiki" title="28th December 2020" revision="1" bag="default">
-<pre>!Sql relationships
-* one to many - one customer can have many orders. Each order is associated to one customer</pre>
+<div created="20201228000109489" creator="Ashish" modified="20201229013435799" modifier="Ashish" tags="Journal Wiki" title="28th December 2020" type="text/vnd.tiddlywiki" revision="2" bag="default">
+<pre>!Mysql
+* Run in mac- `brew services start mysql`
+* one to many - one customer can have many orders. Each order is associated to one customer
+* many to many - one book can have multiple authors and each author can be associated to multuple books
+* Inner join is most common
+* Explicit join syntax is preferred as it makes it clear how the tables are joined
+
+!commands
+```sql
+show databases
+show tables;
+
+-- INNER JOIN
+SELECT first_name, title, grade
+FROM students
+INNER JOIN papers
+    ON students.id = papers.student_id
+ORDER BY grade DESC;
+
+```</pre>
 </div>
 <div created="20201213143318659" creator="Ashish" modified="20201215090556500" modifier="Ashish" tags="Wiki Blackboard" title="Alfred" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>* look into opening projects from alfred
