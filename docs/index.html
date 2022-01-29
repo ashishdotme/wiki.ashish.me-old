@@ -179,6 +179,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/showeditpreview</li>
+
 <li>$:/status/IsAnonymous</li>
 
 <li>$:/status/IsLoggedIn</li>
@@ -220,6 +222,8 @@ Error message and password prompt
 <li>27th January 2022</li>
 
 <li>28th December 2020</li>
+
+<li>29th January 2022</li>
 
 <li>30th December 2021</li>
 
@@ -9917,6 +9921,9 @@ Error message and password prompt
 <div created="20201212082305167" creator="Ashish" modified="20201214182605543" modifier="Ashish" title="$:/SiteTitle" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>My thoughts</pre>
 </div>
+<div created="20220129042046571" creator="Ashish" modified="20220129042046571" modifier="Ashish" title="$:/state/showeditpreview" revision="1" bag="default">
+<pre>yes</pre>
+</div>
 <div title="$:/status/IsAnonymous" revision="1" bag="default">
 <pre>no</pre>
 </div>
@@ -9929,7 +9936,7 @@ Error message and password prompt
 <div title="$:/status/UserName" revision="1" bag="default">
 <pre>Ashish</pre>
 </div>
-<div list="[[27th January 2022]] [[24th January 2022]] [[18th January 2022]] [[8th January 2022]] [[31st December 2021]] [[30th December 2021]] [[26th December 2021]] [[10th December 2021]] [[5th January 2021]] [[28th December 2020]] [[24th December 2020]] [[15th December 2020]] Alfred [[13th December 2020]] [[Discord bot]] [[12th December 2020]]" title="$:/StoryList" revision="3" bag="default">
+<div list="[[29th January 2022]] [[27th January 2022]] [[24th January 2022]] [[18th January 2022]] [[8th January 2022]] [[31st December 2021]] [[30th December 2021]] [[26th December 2021]] [[10th December 2021]] [[5th January 2021]] [[28th December 2020]] [[24th December 2020]] [[15th December 2020]] Alfred [[13th December 2020]] [[Discord bot]] [[12th December 2020]]" title="$:/StoryList" revision="3" bag="default">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json" revision="0" bag="default">
@@ -10207,7 +10214,7 @@ for (HashMap.Entry&lt;Integer, Integer&gt; itr : map.entrySet()) {
     }
 ```</pre>
 </div>
-<div created="20220127140604620" creator="Ashish" modified="20220127154649838" modifier="Ashish" tags="Journal Wiki" title="27th January 2022" type="text/vnd.tiddlywiki" revision="1" bag="default">
+<div created="20220127140604620" creator="Ashish" modified="20220127154652406" modifier="Ashish" tags="Journal Wiki" title="27th January 2022" type="text/vnd.tiddlywiki" revision="0" bag="default">
 <pre>!! Remove old mode new mode changes in git
 
 ```shell
@@ -10239,6 +10246,13 @@ INNER JOIN papers
     ON students.id = papers.student_id
 ORDER BY grade DESC;
 
+```</pre>
+</div>
+<div created="20220129041849407" creator="Ashish" modified="20220129042052941" modifier="Ashish" tags="Journal Wiki" title="29th January 2022" revision="1" bag="default">
+<pre>!! Sqlite delete query
+
+```sql
+DELETE FROM notes body is null or body = ''
 ```</pre>
 </div>
 <div created="20211230061708248" creator="Ashish" modified="20211230061823766" modifier="Ashish" tags="Journal Wiki" title="30th December 2021" type="text/vnd.tiddlywiki" revision="0" bag="default">
